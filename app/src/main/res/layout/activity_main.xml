@@ -4,15 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Macaulay"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/round"
+        android:text="Authenticate to have access"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:backgroundTint="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:padding="10dp"
+        android:fontFamily="monospace"
+        android:text="Fingerprint Auth"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
